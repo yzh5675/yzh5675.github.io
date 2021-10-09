@@ -6,7 +6,7 @@
   <link href="https://yzh5675.top/atom.xml" rel="self"/>
   
   <link href="https://yzh5675.top/"/>
-  <updated>2021-09-27T01:50:42.811Z</updated>
+  <updated>2021-10-09T11:44:17.107Z</updated>
   <id>https://yzh5675.top/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo博客订阅文章通知功能</title>
+    <link href="https://yzh5675.top/posts/ebb2.html"/>
+    <id>https://yzh5675.top/posts/ebb2.html</id>
+    <published>2021-10-09T11:26:05.000Z</published>
+    <updated>2021-10-09T11:44:17.107Z</updated>
+    
+    
+    <summary type="html">使用插件实现博客文章订阅并使用浏览器进行新文章推送的通知</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://yzh5675.top/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://yzh5675.top/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>利用Hexo+GitHub Page 搭建博客</title>
     <link href="https://yzh5675.top/posts/3eeb.html"/>
     <id>https://yzh5675.top/posts/3eeb.html</id>
     <published>2021-09-27T01:38:35.000Z</published>
-    <updated>2021-09-27T01:50:42.811Z</updated>
+    <updated>2021-10-09T11:45:49.764Z</updated>
     
     
       
@@ -33,6 +52,8 @@
       
     
     
+    
+    <category term="Hexo" scheme="https://yzh5675.top/categories/Hexo/"/>
     
     
     <category term="GitHub" scheme="https://yzh5675.top/tags/GitHub/"/>
@@ -46,7 +67,7 @@
     <link href="https://yzh5675.top/posts/0.html"/>
     <id>https://yzh5675.top/posts/0.html</id>
     <published>2021-09-25T16:38:35.000Z</published>
-    <updated>2021-09-27T02:19:14.535Z</updated>
+    <updated>2021-10-09T11:32:38.604Z</updated>
     
     
       
@@ -58,6 +79,8 @@
       
     
     
+    
+    <category term="GitHub" scheme="https://yzh5675.top/categories/GitHub/"/>
     
     
     <category term="GitHub" scheme="https://yzh5675.top/tags/GitHub/"/>

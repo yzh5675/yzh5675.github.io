@@ -4,12 +4,43 @@
   
     
     <entry>
+      <title>Hexo博客订阅文章通知功能</title>
+      <link href="/posts/ebb2.html"/>
+      <url>/posts/ebb2.html</url>
+      
+        <content type="html"><![CDATA[<p>一直有小伙伴催我要我写教程，关于如何实现博客文章订阅的功能，并进行推送的功能，我接触这个也不久，百度一番，最终配置成功。手动艾特我群里的那些小伙伴，教程来了😂，</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>利用Hexo+GitHub Page 搭建博客</title>
       <link href="/posts/3eeb.html"/>
       <url>/posts/3eeb.html</url>
       
         <content type="html"><![CDATA[<h3 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h3><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p> 收到很多留言和联系我怎么搭建一个博客，但是由于学习比较忙，所有就没有给大家都回复到，还有很多同学想让我给搭建博客，但是我觉得授人以鱼不如授人以渔，所以整理出来一些我搭建过程中的主要步骤。在之后如果有时间或者有人想要看我是如何改的博客样式的，可以留言和评论，我再给出教程，在按照步骤搭建的过程中遇到问题也可以联系我。</p><h4 id="1-安装工具"><a href="#1-安装工具" class="headerlink" title="1.安装工具"></a>1.安装工具</h4><p>在搭建博客的前期需要安装相关的工具分别是node和git，这两个工具都可以在官网上面下载，安    装和配置可以在网上自行搜索。</p><h4 id="2-注册github账号"><a href="#2-注册github账号" class="headerlink" title="2.注册github账号"></a>2.注册github账号</h4><p>因为我们要搭建的是一个静态博客，所有要把文件都放在GitHub的仓库里，所以需要注册一个    GitHub账号以及新建一个GitHub仓库，这个比较简单可以自行搜索。</p><ul><li>这里有一个要注意的环节就是在建立仓库的时候仓库名必须是<code>用户名.github.io</code></li><li>在仓库有一个index.html文件时，在浏览器中输入<code>https://用户名.github.io</code>就可以看到index.html里的内容，github pages就创建好了（这一步只是试验，不是必须操作）</li></ul><h4 id="3-配置git用户信息"><a href="#3-配置git用户信息" class="headerlink" title="3. 配置git用户信息"></a>3. 配置git用户信息</h4><p>​    打开git输入</p><pre class="line-numbers language-none"><code class="language-none">git config --global user.name "你的github用户名"git config --global user.email "你的github邮箱"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="4-安装hexo静态博客框架发布到github-pages"><a href="#4-安装hexo静态博客框架发布到github-pages" class="headerlink" title="4.安装hexo静态博客框架发布到github pages"></a>4.安装hexo静态博客框架发布到github pages</h4><p>打开git输入</p><pre class="line-numbers language-none"><code class="language-none">npm install -g hexo-clihexo init 文件夹名cd 文件夹名npm install <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>后续操作都在上面新建的文件夹里操作</p><p>hexo框架的本地搭建完成之后就输入命令查看效果（不是必要操作）</p><pre class="line-numbers language-none"><code class="language-none">hexo ghexo s<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h4 id="5-将本地博客发布到github-pages中"><a href="#5-将本地博客发布到github-pages中" class="headerlink" title="5.将本地博客发布到github pages中"></a>5.将本地博客发布到github pages中</h4><p>下载安装发布的插件</p><pre class="line-numbers language-none"><code class="language-none">npm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>将本地目录和github关联起来</p><p>生成秘钥和公钥</p><pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t rsa -C "你的github邮件地址"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>一直回车，在提示目录下找到.ssh文件夹， 把公钥也就是id_rsa.pub中的内容复制到github的setting里的SSH and GPG keys中添加</li></ul><p>测试链接是否成功</p><pre class="line-numbers language-none"><code class="language-none">ssh -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h4 id="6-配置站点目录并发布"><a href="#6-配置站点目录并发布" class="headerlink" title="6.配置站点目录并发布"></a>6.配置站点目录并发布</h4><p>用编辑器打开_config.yml文件，对博客进行个性化配置</p><pre class="line-numbers language-none"><code class="language-none">title: 你的博客名 subtitle: 博客的副标题，有些主题支持 description: 博客描述keywords: 博客关键词 author: 作者，在文章中显示 language: 博客语言语种 timezone: 时区<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>在文件的最低部添加repo项和branch项，并添加如下信息</p><pre class="line-numbers language-none"><code class="language-none">type: git repo: git@github.com:Github用户名/github用户名.github.io.git//也可使用https地址，如：https://github.com/Github用户名/Github用户名.github.io.git branch: master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>最后就是生成页面并且发布在github pages上，（之后写文章放在/source/_posts/目录下也上下面这三条命令上传)</p><pre class="line-numbers language-none"><code class="language-none">hexo clean    //清缓存hexo g        //渲染hexo d        //上传hexo clean &amp;&amp; hexo g -d//这是三条一起运行的命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>这时候打开<code>https://用户名.github.io</code>你就可以看到你的博客已经更新了。</p>]]></content>
       
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
       
       
         <tags>
@@ -31,6 +62,12 @@
       
         <content type="html"><![CDATA[<h2 id="Github-下载慢加速"><a href="#Github-下载慢加速" class="headerlink" title="Github 下载慢加速"></a>Github 下载慢加速</h2><p>解决GitHub 下载 release 资源太慢的办法</p><h3 id="1-使用下载器下载"><a href="#1-使用下载器下载" class="headerlink" title="1. 使用下载器下载"></a>1. 使用下载器下载</h3><p>  复制 release 资源链接，使用 <code>迅雷</code> 或者 <code>Free Download Manager</code> 直接下载 <a href="http://github.com/">http://github.com</a> 开头的原链接。<br>  使用迅雷下载不是很稳定，有时候速度可以秒下，有时候下载不下来。可以多试几次。 FDM暂时还没测试过。</p><p>优点： 有资源时可以下载快，从官方原链接下载，安全性可靠性相对较好</p><p>不足： 依赖下载器，需要看资源情况</p><h3 id="2-使用代下载服务l"><a href="#2-使用代下载服务l" class="headerlink" title="2. 使用代下载服务l"></a>2. 使用代下载服务l</h3><p>  复制 release 资源链接，使用github 代下载 ：</p><p>​    <a href="http://gitd.cc/">http://gitd.cc/</a><br>​    <a href="http://github.b15.me/">http://github.b15.me/</a><br>优点： 不需要下载器，随时都可以打开网站使用</p><p>不足： 网站可用性、安全性可靠性取决于代下载服务，文件会被二次压缩，且下载文件名会改变</p><h3 id="3-Github下载加速插件"><a href="#3-Github下载加速插件" class="headerlink" title="3. Github下载加速插件"></a>3. Github下载加速插件</h3><p>  安装gitHub加速插件：</p><p><a href="https://fhefh2015.github.io/Fast-GitHub/">https://fhefh2015.github.io/Fast-GitHub/</a></p><h3 id="4-使用GitHub-反代域名替换"><a href="#4-使用GitHub-反代域名替换" class="headerlink" title="4. 使用GitHub 反代域名替换"></a>4. 使用GitHub 反代域名替换</h3><p>  使用GitHub 反代域名替换</p><p><a href="https://fastgit.org/">https://fastgit.org/</a><br><a href="https://www.gitclone.com/">https://www.gitclone.com</a><br><a href="https://cdn.con.sh/">https://cdn.con.sh</a><br><a href="http://gitcdn.link/">http://gitcdn.link/</a></p><h2 id="Github-访问慢加速"><a href="#Github-访问慢加速" class="headerlink" title="Github 访问慢加速"></a>Github 访问慢加速</h2><p>内容整理来自网络。</p><h3 id="1、获取相关域名"><a href="#1、获取相关域名" class="headerlink" title="1、获取相关域名"></a>1、获取相关域名</h3><p>获取Github相关网站的域名。</p><h4 id="方式一："><a href="#方式一：" class="headerlink" title="方式一："></a>方式一：</h4><p>访问 <a href="https://github.com/">https://github.com</a></p><p>F12 查看网络，查看域名。</p><h4 id="方式二："><a href="#方式二：" class="headerlink" title="方式二："></a>方式二：</h4><p>直接访问：<a href="https://github.com.ipaddress.com/">https://github.com.ipaddress.com</a></p><h4 id="2、获取相关域名对应IP"><a href="#2、获取相关域名对应IP" class="headerlink" title="2、获取相关域名对应IP"></a>2、获取相关域名对应IP</h4><p>访问 <a href="https://www.ipaddress.com/">https://www.ipaddress.com</a></p><p>分别输入</p><p>github.global.ssl.fastly.net<br>github.com</p><p>查询ip地址</p><h3 id="3、配置hosts"><a href="#3、配置hosts" class="headerlink" title="3、配置hosts"></a>3、配置hosts</h3><p>windows 系统的 hosts 文件的位置如下：C:\Windows\System32\drivers\etc\hosts ;</p><p>mac/linux 系统的 hosts 文件的位置如下：/etc/hosts 。</p><p>下面是我的配置，更新日期 2020-09-20</p><pre class="line-numbers language-none"><code class="language-none">140.82.112.3 github.com199.232.69.194 github.global.ssl.fastly.net199.232.68.133  githubusercontent.com185.199.108.153 assets-cdn.github.com185.199.109.153 assets-cdn.github.com185.199.110.153 assets-cdn.github.com185.199.111.153 assets-cdn.github.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="4、刷新DNS"><a href="#4、刷新DNS" class="headerlink" title="4、刷新DNS"></a>4、刷新DNS</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ipconfig /flushdns<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>应该快点了吧？</p><p>隔一段时间查一次，IP 不会一直不变，不定期更新。</p><h3 id="5、DNS命令解析IP"><a href="#5、DNS命令解析IP" class="headerlink" title="5、DNS命令解析IP"></a>5、DNS命令解析IP</h3><p>DNS查看</p><pre class="line-numbers language-BASH" data-language="BASH"><code class="language-BASH">ipconfig /all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>底下可以看到 DNS 服务器IP相关信息。</p><p>指定DNS 解析域名：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">nslookup</span> github.com  <span class="token number">8.8</span>.8.8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>能显示出DNS服务器IP，说明github.com 是可以访问的，可以尝试修改自己电脑DNS再试试。</p><pre class="line-numbers language-none"><code class="language-none">谷歌：8.8.8.8阿里：223.5.5.5 或 223.6.6.6114 : 114.114.114.114百度:180.76.76.76360 : 101.226.4.5南方电信: 180.153.225.136北京联通 202.106.0.20 202.106.196.115<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>执行命令：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ipconfig /flushdns<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
       
+      
+      <categories>
+          
+          <category> GitHub </category>
+          
+      </categories>
       
       
         <tags>
