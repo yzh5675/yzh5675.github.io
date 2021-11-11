@@ -6,7 +6,7 @@
   <link href="https://yzh5675.top/atom.xml" rel="self"/>
   
   <link href="https://yzh5675.top/"/>
-  <updated>2021-10-27T01:38:41.739Z</updated>
+  <updated>2021-11-11T00:54:32.212Z</updated>
   <id>https://yzh5675.top/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>注解与反射详解</title>
+    <link href="https://yzh5675.top/posts/dxi2.html"/>
+    <id>https://yzh5675.top/posts/dxi2.html</id>
+    <published>2021-11-11T00:47:24.000Z</published>
+    <updated>2021-11-11T00:54:32.212Z</updated>
+    
+    
+    <summary type="html">Java中Annotation(注解)与反射概念</summary>
+    
+    
+    
+    <category term="Java" scheme="https://yzh5675.top/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://yzh5675.top/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vue语法及入门基础</title>
     <link href="https://yzh5675.top/posts/3fde.html"/>
     <id>https://yzh5675.top/posts/3fde.html</id>
     <published>2021-10-27T01:13:47.000Z</published>
-    <updated>2021-10-27T01:38:41.739Z</updated>
+    <updated>2021-11-11T00:55:17.988Z</updated>
     
     
     <summary type="html">Vue-动态构建用户界面的渐进式 JavaScript 框架</summary>
@@ -40,7 +59,7 @@
     <link href="https://yzh5675.top/posts/ebb2.html"/>
     <id>https://yzh5675.top/posts/ebb2.html</id>
     <published>2021-10-09T11:26:05.000Z</published>
-    <updated>2021-10-09T11:44:17.107Z</updated>
+    <updated>2021-11-11T00:55:06.381Z</updated>
     
     
     <summary type="html">使用插件实现博客文章订阅并使用浏览器进行新文章推送的通知</summary>
@@ -86,7 +105,7 @@
     <link href="https://yzh5675.top/posts/0.html"/>
     <id>https://yzh5675.top/posts/0.html</id>
     <published>2021-09-25T16:38:35.000Z</published>
-    <updated>2021-10-09T11:32:38.604Z</updated>
+    <updated>2021-11-11T00:54:42.032Z</updated>
     
     
       
