@@ -352,12 +352,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Spring/">
-                                <span class="chip bg-color">Spring</span>
-                            </a>
-                        
                             <a href="/tags/Java/">
                                 <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                            <a href="/tags/Spring/">
+                                <span class="chip bg-color">Spring</span>
                             </a>
                         
                     </div>
@@ -439,18 +439,18 @@
 <p>​    一、SpringBean的概述<br>​    SpringBean的概述：Spring Bean 是一个被实例化、组装并通过 Spring IOC 容器所管理的对象；它是构成 Spring 应用程序的支柱；简单来说就是一个Java类</p>
 <h2 id="二、SpringBean的管理"><a href="#二、SpringBean的管理" class="headerlink" title="二、SpringBean的管理"></a>二、SpringBean的管理</h2><h4 id="1、Bean管理的三种方式"><a href="#1、Bean管理的三种方式" class="headerlink" title="1、Bean管理的三种方式"></a>1、Bean管理的三种方式</h4><p>​        ① 基于XML的配置文件<br>​        ② 基于注解的配置<br>​        ③ 基于java的配置</p>
 <h4 id="2、IOC对Bean的管理（XML）"><a href="#2、IOC对Bean的管理（XML）" class="headerlink" title="2、IOC对Bean的管理（XML）"></a>2、IOC对Bean的管理（XML）</h4><p>​           ① 基于xml方式创建对象<br>​        <bean id="user" class="类全路径"></bean><br>​        （1）在 spring 配置文件中，使用 bean 标签，标签里面添加对应属性，就可以实现对象创建。<br>​        （2）在 bean 标签有很多属性，介绍常用的属性。</p>
-<pre><code>        * id 属性：唯一标识
-        * class 属性：类全路径（包类路径）
-    （3）创建对象时候，默认也是执行无参数构造方法完成对象创建。
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">	<span class="token operator">*</span> id 属性：唯一标识
+	<span class="token operator">*</span> <span class="token keyword">class</span> 属性：类全路径（包类路径）
+（<span class="token number">3</span>）创建对象时候，默认也是执行无参数构造方法完成对象创建。
 
-       ② 基于xml方式注入属性
-    （1）基于构造函数的依赖注入
-        在bean标签里写这个标签：
-              &lt;constructor-arg value="赋给属性的值"&gt;&lt;/constructor-arg&gt;
-    （2）基于设值函数的依赖注入
-        在bean标签里写这个标签：
-            &lt;property name="属性名" value="赋给属性的值"&gt;&lt;/property&gt;
-</code></pre>
+      ② 基于xml方式注入属性
+（<span class="token number">1</span>）基于构造函数的依赖注入
+	在bean标签里写这个标签：
+	      <span class="token operator">&lt;</span>constructor<span class="token operator">-</span>arg value<span class="token operator">=</span><span class="token string">"赋给属性的值"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>constructor<span class="token operator">-</span>arg<span class="token operator">&gt;</span>
+（<span class="token number">2</span>）基于设值函数的依赖注入
+	在bean标签里写这个标签：
+		<span class="token operator">&lt;</span>property name<span class="token operator">=</span><span class="token string">"属性名"</span> value<span class="token operator">=</span><span class="token string">"赋给属性的值"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>property<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <h4 id="3、SpringBean的作用域"><a href="#3、SpringBean的作用域" class="headerlink" title="3、SpringBean的作用域"></a>3、SpringBean的作用域</h4><p>​    *singleton     在 spring IOC 容器仅存在一个 Bean 实例，Bean 以单例方式存在，默认值<br>​    *prototype     每次从容器中调用 Bean 时，都返回一个新的实例，即每次调用getBean()时，相当于执行 newXxxBean()<br>​    request         每次 HTTP 请求都会创建一个新的 Bean，该作用域仅适用于WebApplicationContext 环境<br>​    session         同一个 HTTP Session 共享一个 Bean，不同 Session 使用不同的 Bean，仅适用 WebApplicationContext 环境<br>​    global        session一般用于 Portlet 应 用 环 境 ， 该 运 用 域 仅 适 用 于WebApplicationContext 环境</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token number">1</span>、singleton 和 prototype 区别 
 	① singleton 单实例，prototype 多实例。
@@ -636,12 +636,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Spring/">
-                                    <span class="chip bg-color">Spring</span>
-                                </a>
-                            
                                 <a href="/tags/Java/">
                                     <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                                <a href="/tags/Spring/">
+                                    <span class="chip bg-color">Spring</span>
                                 </a>
                             
                         </div>
@@ -1343,11 +1343,11 @@
                     var years = days * 365;
                     var today = new Date();
                     var startYear = "2021";
-                    var startMonth = "9";
-                    var startDate = "9";
-                    var startHour = "0";
-                    var startMinute = "0";
-                    var startSecond = "0";
+                    var startMonth = "8";
+                    var startDate = "8";
+                    var startHour = "8";
+                    var startMinute = "8";
+                    var startSecond = "8";
                     var todayYear = today.getFullYear();
                     var todayMonth = today.getMonth() + 1;
                     var todayDate = today.getDate();
@@ -1391,7 +1391,7 @@
 
 
 
-    <a href="mailto:2093559162@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:https://v.douyin.com/dumhyme/" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1666,13 +1666,13 @@ webpushr('setup',{'key':'BOZqYV1qRQ8DpWmVehZR6DnNHhbFsAIqw2vqM3bzRvlkfK6AMgDYNkY
             }
           }
         });
-        </script><script>
+        </script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>(function (w, d, s, id) {
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script>(function (w, d, s, id) {
             if (typeof (w.webpushr) !== 'undefined') return; w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.id = id; js.async = 1; js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.appendChild(js);}(window, document, 'script', 'webpushr-jssdk'));webpushr('setup', { 'key': 'BOZqYV1qRQ8DpWmVehZR6DnNHhbFsAIqw2vqM3bzRvlkfK6AMgDYNkYK4M2UCvWbxB6xouzYF9cEjLc_LGnsO1w' });</script></body>
 
 </html>
