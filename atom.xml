@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>别听学友唱情歌</title>
+  <title>Yao&#39;Blog</title>
   
-  <subtitle>别听学友唱情歌&#39;Blog</subtitle>
+  <subtitle>Yao&#39;Blog</subtitle>
   <link href="https://yzh5675.top/atom.xml" rel="self"/>
   
   <link href="https://yzh5675.top/"/>
-  <updated>2021-12-15T03:35:59.718Z</updated>
+  <updated>2022-01-12T02:50:06.806Z</updated>
   <id>https://yzh5675.top/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用SEO优化技巧提高网站排名</title>
+    <link href="https://yzh5675.top/posts/f09i.html"/>
+    <id>https://yzh5675.top/posts/f09i.html</id>
+    <published>2022-01-12T00:31:17.000Z</published>
+    <updated>2022-01-12T02:50:06.806Z</updated>
+    
+    
+    <summary type="html">往往一些新站长会迷茫如何优化搜索引擎的排名，利用这些SEO优化技巧让站点排上首页.</summary>
+    
+    
+    
+    <category term="SEO" scheme="https://yzh5675.top/categories/SEO/"/>
+    
+    
+    <category term="SEO" scheme="https://yzh5675.top/tags/SEO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CRM系统安装部署</title>
+    <link href="https://yzh5675.top/posts/ze0x.html"/>
+    <id>https://yzh5675.top/posts/ze0x.html</id>
+    <published>2021-12-20T02:16:19.000Z</published>
+    <updated>2022-01-12T02:49:19.185Z</updated>
+    
+    
+    <summary type="html">悟空CRM系统安装部署</summary>
+    
+    
+    
+    <category term="CRM" scheme="https://yzh5675.top/categories/CRM/"/>
+    
+    
+    <category term="CRM" scheme="https://yzh5675.top/tags/CRM/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue语法及入门基础</title>
@@ -142,9 +180,9 @@
     <category term="Hexo" scheme="https://yzh5675.top/categories/Hexo/"/>
     
     
-    <category term="Hexo" scheme="https://yzh5675.top/tags/Hexo/"/>
-    
     <category term="GitHub" scheme="https://yzh5675.top/tags/GitHub/"/>
+    
+    <category term="Hexo" scheme="https://yzh5675.top/tags/Hexo/"/>
     
   </entry>
   
