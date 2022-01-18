@@ -6,7 +6,7 @@
   <link href="https://yzh5675.top/atom.xml" rel="self"/>
   
   <link href="https://yzh5675.top/"/>
-  <updated>2022-01-13T03:10:55.357Z</updated>
+  <updated>2022-01-18T03:45:12.890Z</updated>
   <id>https://yzh5675.top/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>NPM、CNPM、YARN三剑客</title>
+    <link href="https://yzh5675.top/posts/x2m0.html"/>
+    <id>https://yzh5675.top/posts/x2m0.html</id>
+    <published>2022-01-18T01:16:18.000Z</published>
+    <updated>2022-01-18T03:45:12.890Z</updated>
+    
+    
+    <summary type="html">细数NPM、CNPM、YARN的特点和区别</summary>
+    
+    
+    
+    <category term="NPM" scheme="https://yzh5675.top/categories/NPM/"/>
+    
+    
+    <category term="NPM" scheme="https://yzh5675.top/tags/NPM/"/>
+    
+  </entry>
+  
+  <entry>
     <title>利用SEO优化技巧提高网站排名</title>
     <link href="https://yzh5675.top/posts/f09i.html"/>
     <id>https://yzh5675.top/posts/f09i.html</id>
     <published>2022-01-12T00:31:17.000Z</published>
-    <updated>2022-01-13T03:10:55.357Z</updated>
+    <updated>2022-01-18T03:45:37.884Z</updated>
     
     
     <summary type="html">往往一些新站长会迷茫如何优化搜索引擎的排名，利用这些SEO优化技巧让站点排上首页.</summary>
@@ -56,10 +75,10 @@
   
   <entry>
     <title>利用GitHub+阿里云OSS+PicGo+Typora搭建图床</title>
-    <link href="https://yzh5675.top/posts/f09i.html"/>
-    <id>https://yzh5675.top/posts/f09i.html</id>
+    <link href="https://yzh5675.top/posts/z5l2.html"/>
+    <id>https://yzh5675.top/posts/z5l2.html</id>
     <published>2021-12-07T01:09:37.000Z</published>
-    <updated>2022-01-13T03:42:35.183Z</updated>
+    <updated>2022-01-18T01:27:51.730Z</updated>
     
     
     <summary type="html">GitHub+阿里云OSS+PicGo+Typora搭建图床配置说明</summary>
