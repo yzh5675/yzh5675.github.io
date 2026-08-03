@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="技术周刊, Java, SpringBoot, 云原生, DevOps, AI, 大模型">
+    <meta name="description" content="每周精选后端开发、云原生和AI领域的技术文章聚合">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术周刊 #2026.08.03 | Yao'Blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <link rel="stylesheet" href="/libs/awesome/css/all.css">
+    <script src="/libs/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="navbar-fixed">
+        <nav class="bg-color nav-transparent">
+            <div class="nav-wrapper container">
+                <div class="brand-logo">
+                    <a href="/" class="waves-effect waves-light">
+                        <span class="logo-span">Yao'Blog</span>
+                    </a>
+                </div>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                <ul class="right nav-menu">
+                    <li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom: 0.6;"></i><span>首页</span></a></li>
+                    <li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom: 0.6;"></i><span>标签</span></a></li>
+                    <li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom: 0.6;"></i><span>分类</span></a></li>
+                    <li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom: 0.6;"></i><span>归档</span></a></li>
+                    <li class="hide-on-med-and-down nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fas fa-comments" style="zoom: 0.6;"></i><span>留言板</span></a></li>
+                    <li class="hide-on-med-and-down nav-item"><a href="/navigate" class="waves-effect waves-light"><i class="fas fa-location-arrow" style="zoom: 0.6;"></i><span>导航</span></a></li>
+                    <li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-user-circle" style="zoom: 0.6;"></i><span>关于</span></a></li>
+                    <li class="hide-on-med-and-down nav-item active"><a href="/weekly-tech/" class="waves-effect waves-light"><i class="fas fa-newspaper" style="zoom: 0.6;"></i><span>技术周刊</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-cover pd-header">
+        <div class="container">
+            <div class="row">
+                <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+                    <div class="brand">
+                        <div class="title center-align" style="font-size: 2.5rem;">
+                            技术周刊 #2026.08.03
+                        </div>
+                        <div class="description center-align" style="font-size: 1.1rem;">
+                            每周精选后端开发、云原生与AI领域的热门技术文章
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="container" style="max-width: 900px;">
+            <!-- Weekly intro -->
+            <div class="card" style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                <div class="card-content" style="padding: 10px;">
+                    <h5 style="margin: 0 0 10px 0;"><i class="fas fa-robot" style="margin-right: 10px;"></i>本周精选</h5>
+                    <p style="margin: 0; opacity: 0.9;">
+                        本期共收录 <strong>15</strong> 篇技术文章：
+                        <span class="chip" style="background: rgba(255,255,255,0.2); color: white; margin: 0 5px;">Java后端 2 篇</span>
+                        <span class="chip" style="background: rgba(255,255,255,0.2); color: white; margin: 0 5px;">云原生DevOps 3 篇</span>
+                        <span class="chip" style="background: rgba(255,255,255,0.2); color: white; margin: 0 5px;">AI大模型 10 篇</span>
+                    </p>
+                    <p style="margin: 10px 0 0 0; font-size: 0.9rem; opacity: 0.8;">
+                        <i class="fas fa-info-circle"></i> 本文内容由 RSS 自动聚合生成，点击标题可跳转至原文阅读。版权归原作者及原发布平台所有。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Article sections -->
+            
+    <div class="category-section" style="margin-bottom: 40px;">
+        <h3 style="border-left: 4px solid #0f9d58; padding-left: 12px; margin-bottom: 20px; color: #333;">
+            <i class="fas fa-folder-open" style="margin-right: 8px; color: #0f9d58;"></i>Java后端
+        </h3>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.oschina.net/news/486146" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            自变量机器人开源 HOST 框架，让机器人看 29 秒视频就学会一个技能
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">OSChina</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">花几十秒给人示范一个动作，人要练很多次。但对机器人，一次就够了。 今天，自变量机器人（X SQUARE ROBOT）联合北京理工大学、清华大学发布了 HOST 框架（Human-to-robot One-Shot Skill AcquisiTion），论文、代码、权重全部开源。 HOST 做的事情很直接：给机器人看一段人类操作视频，29 秒后，它就能在真实世界中复现...</p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> Java后端
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.oschina.net/news/486130" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            snackjson v4.0.58 已经发布，高性能 Jsonpath 框架
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">OSChina</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">snackjson v4.0.58 已经发布，高性能 Jsonpath 框架 此版本更新内容包括： 添加 TypeChecker 类型安全检测机制 options.addChecker(clzName -> { if(clzName.startsWith("com.demo")) { return TypeChecker.ALLOW; } else { return TypeChecker.DENY; } }); 详情查看：https://g...</p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> Java后端
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-section" style="margin-bottom: 40px;">
+        <h3 style="border-left: 4px solid #0f9d58; padding-left: 12px; margin-bottom: 20px; color: #333;">
+            <i class="fas fa-folder-open" style="margin-right: 8px; color: #0f9d58;"></i>云原生DevOps
+        </h3>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.oschina.net/news/486059/rulego-0-37-0-released" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            RuleGo v0.37.0 发布：工业协议与时序库全面覆盖、Nacos 微服务发现、流计算 CEP
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">OSChina</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">RuleGo 是一个基于 Go 语言的轻量级、高性能、嵌入式规则引擎。它通过规则链（JSON/可视化）编排组件，实现复杂业务逻辑的声明式管理，在物联网、边缘计算、数据集成、自动化、智能体平台等场景有广泛应用。 如果说 v0.36.0 的主题是"AI Agent 框架化"，那么 v0.37.0 的主题是 "连接与数据流"： 向下连接设备——IoT 组件...</p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> 云原生DevOps
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.oschina.net/news/486022/docker-29-7-1-released" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            Docker 29.7.1 发布
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">OSChina</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">Docker 29.7.1 现已发布，具体更新内容如下： Bug fixes and enhancements 修复了一个回归问题，该问题导致无法拉取图层中包含缺少明确父目录条目的目录的图像。moby/moby#53260 修复了一个回归问题，即CopyToContainer会拒绝遍历绝对符号链接的容器路径，例如/var/run -> /run。moby/moby#53261 如需查看此版本中的所有...</p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> 云原生DevOps
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.oschina.net/news/485932/databuff-0-1-6-released" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            DataBuff v0.1.6 发布 · Skywalking 平滑迁移到 Databuff
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">OSChina</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">DataBuff 是一款面向云原生与微服务场景的开源 AI Native OpenTelemetry APM，采用 OTLP 标准接入、Apache Doris 统一存储，Web 端提供拓扑 / Trace / 指标与多 Agent 排障。项目已在 OSCHINA 软件库收录：https://www.oschina.net/p/databuff 今天，DataBuff 正式发布 v0.1.6。相对 v0.1.5 共 20 个提交，本版无 Schema...</p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> 云原生DevOps
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category-section" style="margin-bottom: 40px;">
+        <h3 style="border-left: 4px solid #0f9d58; padding-left: 12px; margin-bottom: 20px; color: #333;">
+            <i class="fas fa-folder-open" style="margin-right: 8px; color: #0f9d58;"></i>AI大模型
+        </h3>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.infoq.cn/article/0j39GYLo41A3VMv9BoOi?utm_source=rss&utm_medium=article" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            Anthropic 详解 Claude 的安全隔离架构：如何在 Web、开发和桌面环境中约束 Agent 行为
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">InfoQ中文</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">点击查看原文></p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> AI大模型
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.infoq.cn/article/pR6wfSjXI1X0VwZmWAjg?utm_source=rss&utm_medium=article" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            寒武纪给超8成员工发股票激励，人均160万；宇树员工掏2.7亿认购IPO，王兴兴自掏1500万；Altman自曝沉迷 TikTok：一刷就是 3 小时｜AI周报
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">InfoQ中文</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">点击查看原文></p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> AI大模型
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.infoq.cn/article/uRoTVrUKptoRHzFwSpxj?utm_source=rss&utm_medium=article" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            Altman 带着GPT-6进白宫？OpenAI 新模型曝光，或成美国首批过审模型
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">InfoQ中文</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">点击查看原文></p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> AI大模型
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.infoq.cn/article/XG7GeBthC6eKO5Rejf02?utm_source=rss&utm_medium=article" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            阿里Qwen3.8正式发布：2.4T规模，自主编程16天搓出一个Hermes Agent
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">InfoQ中文</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">点击查看原文></p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> AI大模型
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.infoq.cn/article/amvXR0j31a7NMB4F5Z3Z?utm_source=rss&utm_medium=article" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            浙江大学软件学院教授周经森博士确认出席AICon深圳，将分享人工智能时代的性能工程
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">InfoQ中文</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">点击查看原文></p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> AI大模型
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.oschina.net/news/486167/dbeaver-26-1-4-released" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            DBeaver 26.1.4 发布
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">OSChina</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">DBeaver 是一个免费开源的通用数据库工具，适用于开发人员和数据库管理员。DBeaver 26.1.4 现已发布，具体更新内容包括： AI 助手： 现在可以通过键盘访问 AI 聊天功能（添加了一些快捷键） 新增了始终在新 SQL 控制台中打开 AI 生成的脚本的功能 修复了部分模型无法动态支持温度参数的问题 在为 OpenAI 创建引擎配置时，...</p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> AI大模型
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.oschina.net/news/486035" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            Qwen3.8-Max 发布，下周开源 Qwen3.8-27B
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">OSChina</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">千问大模型宣布正式推出 Qwen 家族迄今最强大的模型 Qwen3.8-Max，也是其首个 Max 规模的开源权重模型。Qwen3.8-Max 的模型权重预计将于开源，彼时也将同步开源 Qwen3.8-27B 模型。 根据介绍，Qwen3.8-Max 基于 Qwen 3.5 的架构基础构建，参数规模扩展至 2.4 万亿，激活参数95B，支持100万上下文Tokens，在编程、办公、科...</p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> AI大模型
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://my.oschina.net/pingpangkuangmo/blog/19730641" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            Palantir 带火了本体，APM 排障有了本体就够吗？
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">OSChina</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">这两年，"本体论" 突然又火了。Palantir Foundry 不把自己当又一个数据仓库，而是给企业建一套本体（Ontology）：把散落在各系统里的表、流水、传感器，统一抽象成 "客户"" 订单 ""设备"，再定义关系和动作，让数据变成能被程序拿去推理的世界模型。大模型一来，这套说法更吃香 —— 模型再强，也得先知道世界里有什么。...</p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> AI大模型
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.oschina.net/news/486023/smartcall-1-0-2-released" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            SmartCall v1.0.2 发布，新增查看 AI 对话内容、录音打断配置
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">OSChina</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">:book: 项目简介 SmartCall 是一套基于 AI 大模型 + Asterisk 通信引擎构建的新一代智能客服呼叫中心系统。系统深度融合了 AI 语音机器人、智能 IVR 流程编排、实时语音识别（ASR）、语音合成（TTS）、大模型意图识别 等核心能力，为企业提供从呼入智能应答到智能外呼的全链路 AI 客服解决方案。 无论是电商售后、金融催...</p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> AI大模型
+                </div>
+            </div>
+        </div>
+
+        <div class="card article-card" style="margin-bottom: 20px;">
+            <div class="card-content">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    <h4 style="margin: 0 0 10px 0; font-size: 1.3rem; line-height: 1.5;">
+                        <a href="https://www.oschina.net/news/485945/sparkx-2-0-released" target="_blank" rel="noopener noreferrer" style="color: #0f9d58;">
+                            SparkX 企业智能体平台 2.0 版本发布
+                        </a>
+                    </h4>
+                    <span class="chip bg-color" style="margin-left: 10px; flex-shrink: 0;">OSChina</span>
+                </div>
+                <p style="color: #666; margin: 8px 0; line-height: 1.6;">SparkX企业智能体平台2.0版本震撼发布，本次更新为完全重构版本。并带来了如下的特性： 模型任选：基于 LangChain4j 统一封装，接入 OpenAI 兼容标准接口，几乎覆盖市面上所有主流大模型——不限于官方服务，也支持 Ollama 等自建模型。 RAG 索引增强：自研多路检索管线，向量 + 关键词混合检索，多通道 RRF 融合 + 父子...</p>
+                <div style="color: #999; font-size: 0.85rem;">
+                    <i class="far fa-calendar-alt"></i> 2026-08-03 &nbsp;
+                    <i class="fas fa-tag"></i> AI大模型
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <!-- Footer note -->
+            <div class="card-panel" style="margin: 30px 0; background: #f5f5f5;">
+                <p style="margin: 0; color: #666;">
+                    <i class="fas fa-rss" style="margin-right: 8px; color: #ff9800;"></i>
+                    数据来源：InfoQ中文、开源中国等优质技术社区。文章筛选基于关键词自动匹配，如有遗漏敬请谅解。
+                </p>
+                <p style="margin: 10px 0 0 0; color: #999; font-size: 0.85rem;">
+                    最后更新：2026-08-03 16:06 | 
+                    <a href="/atom.xml" target="_blank">RSS订阅</a> |
+                    <a href="/" style="color: #0f9d58;">返回首页</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer bg-color">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8 l8">
+                    <p style="color: #999;">后端开发工程师，分享Java Web实战经验与项目踩坑记录</p>
+                </div>
+                <div class="col s12 m4 l4">
+                    <p style="color: #999; text-align: right;">
+                        <a href="https://github.com/yzh5675" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:2093559162@qq.com"><i class="fas fa-envelope"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/js/matery.js"></script>
+</body>
+</html>
